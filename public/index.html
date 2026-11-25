@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PalettePop — Color Palette Generator</title>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/index.html" class="brand" aria-label="PalettePop Home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-dot" style="background-color: #D96B43;"></span>
+          <span class="brand-dot" style="background-color: #8A7A5C;"></span>
+          <span class="brand-dot" style="background-color: #4F7CAC;"></span>
+        </span>
+        <span>PalettePop</span>
+      </a>
+
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        Menu
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Primary Navigation">
+        <a href="/index.html" class="nav-link active">Home</a>
+        <a href="/generate.html" class="nav-link">Generate</a>
+        <a href="/explore.html" class="nav-link">Explore</a>
+        <a href="/extract.html" class="nav-link">Extract</a>
+        <a href="/editor.html" class="nav-link">Editor</a>
+        <a href="/saved.html" class="nav-link">Saved</a>
+        <a href="/about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <span class="hero-eyebrow">Color Palette Studio</span>
+        <h1 class="hero-title">Create calm, balanced color palettes in seconds.</h1>
+        <p class="hero-description">
+          PalettePop helps you generate, customize, extract, and save harmonious color
+          combinations for websites, UI designs, posters, and presentations.
+        </p>
+        <div class="hero-actions">
+          <a href="/generate.html" class="btn btn-primary">Generate Palette</a>
+          <a href="/explore.html" class="btn btn-secondary">Explore Palettes</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="sample-palettes-heading">
+        <div class="section-header">
+          <div>
+            <h2 id="sample-palettes-heading" class="section-title">Sample Palettes</h2>
+            <p class="section-subtitle">Click any color swatch to copy its HEX code, or save a palette for later.</p>
+          </div>
+          <a href="/explore.html" class="btn btn-secondary btn-sm">View All Palettes</a>
+        </div>
+
+        <div id="sample-palettes-grid" class="grid-2">
+          <div class="status-box">Loading sample palettes...</div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="tools-heading">
+        <div class="section-header">
+          <div>
+            <h2 id="tools-heading" class="section-title">Everything You Need</h2>
+            <p class="section-subtitle">Simple, focused tools without the clutter.</p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3 class="feature-card-title">Random Generator</h3>
+            <p class="feature-card-text">
+              Generate 5-color combinations and lock the shades you want to keep while refreshing the rest.
+            </p>
+            <a href="/generate.html" class="btn btn-secondary btn-sm">Open Generator</a>
+          </article>
+
+          <article class="card">
+            <h3 class="feature-card-title">Image Extractor</h3>
+            <p class="feature-card-text">
+              Pick an image from your device and extract its 5 most dominant colors right in your browser.
+            </p>
+            <a href="/extract.html" class="btn btn-secondary btn-sm">Extract Colors</a>
+          </article>
+
+          <article class="card">
+            <h3 class="feature-card-title">Palette Editor</h3>
+            <p class="feature-card-text">
+              Fine-tune HEX values, add or remove swatches, and save your finished palette locally.
+            </p>
+            <a href="/editor.html" class="btn btn-secondary btn-sm">Open Editor</a>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>PalettePop — Color Palette Generator</span>
+      <span>Built with HTML5, CSS3, Vanilla JS, Node.js &amp; Express.js</span>
+    </div>
+  </footer>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/home.js"></script>
+</body>
+</html>

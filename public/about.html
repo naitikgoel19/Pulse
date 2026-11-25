@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — PalettePop</title>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/index.html" class="brand" aria-label="PalettePop Home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-dot" style="background-color: #D96B43;"></span>
+          <span class="brand-dot" style="background-color: #8A7A5C;"></span>
+          <span class="brand-dot" style="background-color: #4F7CAC;"></span>
+        </span>
+        <span>PalettePop</span>
+      </a>
+
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        Menu
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Primary Navigation">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/generate.html" class="nav-link">Generate</a>
+        <a href="/explore.html" class="nav-link">Explore</a>
+        <a href="/extract.html" class="nav-link">Extract</a>
+        <a href="/editor.html" class="nav-link">Editor</a>
+        <a href="/saved.html" class="nav-link">Saved</a>
+        <a href="/about.html" class="nav-link active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h1 class="section-title">About PalettePop</h1>
+            <p class="section-subtitle">
+              A calm, minimal color palette studio built for websites, UI designs, posters, and presentations.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="feature-card-title">What PalettePop Does</h2>
+          <p class="feature-card-text" style="margin-bottom: 0;">
+            PalettePop helps students, designers, and developers create, customize, preview, and save
+            balanced color combinations. Whether you are starting from a random palette, browsing curated
+            themes, or extracting colors from an inspiration photo, everything works cleanly in one place.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="how-to-use-heading">
+        <div class="section-header">
+          <div>
+            <h2 id="how-to-use-heading" class="section-title">How to Use PalettePop in 3 Simple Steps</h2>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3 class="feature-card-title">1. Discover or Generate</h3>
+            <p class="feature-card-text" style="margin-bottom: 0;">
+              Use <strong>Generate</strong> to create random 5-color palettes (and lock shades you like),
+              <strong>Explore</strong> to browse curated categories, or <strong>Extract</strong> to pull colors from an image.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="feature-card-title">2. Customize &amp; Preview</h3>
+            <p class="feature-card-text" style="margin-bottom: 0;">
+              Open any palette in the <strong>Editor</strong> to adjust HEX codes, pick new shades,
+              or add and remove colors (from 2 up to 8) with a live preview.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="feature-card-title">3. Copy, Save &amp; Export</h3>
+            <p class="feature-card-text" style="margin-bottom: 0;">
+              Copy individual HEX codes or full palettes with one click, export them as JSON, or save
+              favorites to <strong>My Saved Palettes</strong> for future sessions.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="tech-heading">
+        <div class="section-header">
+          <div>
+            <h2 id="tech-heading" class="section-title">Technologies Used</h2>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3 class="feature-card-title">Frontend</h3>
+            <p class="feature-card-text" style="margin-bottom: 0;">
+              Built with semantic <strong>HTML5</strong>, responsive <strong>CSS3</strong>, and
+              <strong>Vanilla JavaScript</strong> — including the HTML5 Canvas API for local image
+              color extraction and <code>localStorage</code> for saving personal palettes.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="feature-card-title">Backend &amp; Storage</h3>
+            <p class="feature-card-text" style="margin-bottom: 0;">
+              Powered by <strong>Node.js</strong> and <strong>Express.js</strong> to serve static pages
+              and provide a lightweight REST API backed by a local <strong>JSON</strong> file
+              (<code>data/palettes.json</code>), with no external APIs or databases required.
+            </p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>PalettePop — Color Palette Generator</span>
+      <span>Built with HTML5, CSS3, Vanilla JS, Node.js &amp; Express.js</span>
+    </div>
+  </footer>
+
+  <script src="/js/common.js"></script>
+</body>
+</html>

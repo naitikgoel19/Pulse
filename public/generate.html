@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generate Palette — PalettePop</title>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/index.html" class="brand" aria-label="PalettePop Home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-dot" style="background-color: #D96B43;"></span>
+          <span class="brand-dot" style="background-color: #8A7A5C;"></span>
+          <span class="brand-dot" style="background-color: #4F7CAC;"></span>
+        </span>
+        <span>PalettePop</span>
+      </a>
+
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        Menu
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Primary Navigation">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/generate.html" class="nav-link active">Generate</a>
+        <a href="/explore.html" class="nav-link">Explore</a>
+        <a href="/extract.html" class="nav-link">Extract</a>
+        <a href="/editor.html" class="nav-link">Editor</a>
+        <a href="/saved.html" class="nav-link">Saved</a>
+        <a href="/about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h1 class="section-title">Generate Palette</h1>
+            <p class="section-subtitle">
+              Create random 5-color palettes, lock favorite shades, copy HEX codes, and save your combinations.
+            </p>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div class="toolbar-group">
+            <button id="generate-btn" type="button" class="btn btn-primary">Generate New Palette</button>
+            <button id="copy-all-btn" type="button" class="btn btn-secondary">Copy All HEX</button>
+            <button id="open-editor-btn" type="button" class="btn btn-secondary">Open in Editor</button>
+          </div>
+
+          <div class="toolbar-group">
+            <input
+              id="palette-name-input"
+              type="text"
+              class="text-input"
+              placeholder="Palette name (optional)"
+              maxlength="40"
+              aria-label="Palette name"
+            />
+            <button id="save-palette-btn" type="button" class="btn btn-secondary">Save Palette</button>
+          </div>
+        </div>
+
+        <div id="generator-grid" class="generator-grid" aria-live="polite"></div>
+
+        <p class="helper-note">
+          Tip: Click any swatch to copy its HEX code, lock colors to keep them when generating, or press Spacebar to generate.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>PalettePop — Color Palette Generator</span>
+      <span>Built with HTML5, CSS3, Vanilla JS, Node.js &amp; Express.js</span>
+    </div>
+  </footer>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/generate.js"></script>
+</body>
+</html>

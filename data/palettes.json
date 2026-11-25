@@ -1,0 +1,122 @@
+[
+  {
+    "id": "warm-terracotta-sun",
+    "name": "Terracotta Sun",
+    "category": "Warm",
+    "colors": ["#D96B43", "#E8985E", "#F2C57C", "#7A3B2E", "#FBF5EE"]
+  },
+  {
+    "id": "warm-autumn-ochre",
+    "name": "Autumn Ochre",
+    "category": "Warm",
+    "colors": ["#B85D3B", "#D49B35", "#E8C882", "#5C3A21", "#F5ECE0"]
+  },
+  {
+    "id": "warm-spiced-amber",
+    "name": "Spiced Amber",
+    "category": "Warm",
+    "colors": ["#9E3B33", "#C86D51", "#E6A57E", "#4A2521", "#F7EFEA"]
+  },
+  {
+    "id": "warm-desert-clay",
+    "name": "Desert Clay",
+    "category": "Warm",
+    "colors": ["#C75B39", "#DF8A65", "#F0C3A4", "#6B3829", "#FAF2EC"]
+  },
+  {
+    "id": "cool-nordic-fjord",
+    "name": "Nordic Fjord",
+    "category": "Cool",
+    "colors": ["#2E4C6D", "#4F7CAC", "#8FB8DE", "#1E2D3D", "#EEF3F7"]
+  },
+  {
+    "id": "cool-slate-mist",
+    "name": "Slate Mist",
+    "category": "Cool",
+    "colors": ["#3D5A80", "#7092B0", "#A9C4D9", "#293241", "#F0F4F8"]
+  },
+  {
+    "id": "cool-evening-indigo",
+    "name": "Evening Indigo",
+    "category": "Cool",
+    "colors": ["#353A6E", "#5C639C", "#9CA3CE", "#1F2242", "#F1F2F8"]
+  },
+  {
+    "id": "cool-glacier-breeze",
+    "name": "Glacier Breeze",
+    "category": "Cool",
+    "colors": ["#2A6F7D", "#569DAA", "#9BCED6", "#1B434D", "#EFF7F8"]
+  },
+  {
+    "id": "neutral-linen-studio",
+    "name": "Linen Studio",
+    "category": "Neutral",
+    "colors": ["#8A7A5C", "#B5A892", "#DED6C6", "#292821", "#FAF8F3"]
+  },
+  {
+    "id": "neutral-warm-stone",
+    "name": "Warm Stone",
+    "category": "Neutral",
+    "colors": ["#6B665E", "#9C968B", "#CCC7BC", "#383530", "#F3EFE6"]
+  },
+  {
+    "id": "neutral-espresso-paper",
+    "name": "Espresso & Paper",
+    "category": "Neutral",
+    "colors": ["#4A4036", "#7D6E5D", "#C4B7A6", "#241E19", "#F7F4EF"]
+  },
+  {
+    "id": "neutral-sandstone-loft",
+    "name": "Sandstone Loft",
+    "category": "Neutral",
+    "colors": ["#7A7167", "#A89F94", "#D8D1C7", "#322E2A", "#F6F3EE"]
+  },
+  {
+    "id": "pastel-soft-bloom",
+    "name": "Soft Bloom",
+    "category": "Pastel",
+    "colors": ["#E8B4B8", "#F3D6CE", "#B8D8D8", "#C8B8DB", "#FAF6F4"]
+  },
+  {
+    "id": "pastel-morning-sorbet",
+    "name": "Morning Sorbet",
+    "category": "Pastel",
+    "colors": ["#F4C2A1", "#F7E1AE", "#C5DFC7", "#B8D0E6", "#FCF9F5"]
+  },
+  {
+    "id": "pastel-lavender-cream",
+    "name": "Lavender Cream",
+    "category": "Pastel",
+    "colors": ["#C9BEDF", "#E6D9F2", "#D8E8E2", "#F2D7D9", "#FAF8FC"]
+  },
+  {
+    "id": "pastel-peach-cloud",
+    "name": "Peach Cloud",
+    "category": "Pastel",
+    "colors": ["#F2C1AE", "#F7DDD0", "#D5E2D4", "#C7D8E8", "#FDF8F5"]
+  },
+  {
+    "id": "nature-forest-moss",
+    "name": "Forest Moss",
+    "category": "Nature",
+    "colors": ["#3B5249", "#519872", "#A4B494", "#2B3A32", "#F2F5F0"]
+  },
+  {
+    "id": "nature-olive-grove",
+    "name": "Olive Grove",
+    "category": "Nature",
+    "colors": ["#606C38", "#8A9A5B", "#DDA15E", "#283618", "#FEFAE0"]
+  },
+  {
+    "id": "nature-coastal-sage",
+    "name": "Coastal Sage",
+    "category": "Nature",
+    "colors": ["#4A6B61", "#7FA397", "#C6D6CE", "#2B3D38", "#F4F7F5"]
+  },
+  {
+    "id": "nature-cedar-meadow",
+    "name": "Cedar Meadow",
+    "category": "Nature",
+    "colors": ["#4E6146", "#7D946B", "#C5D1B8", "#2B3526", "#F3F6F0"]
+  }
+]

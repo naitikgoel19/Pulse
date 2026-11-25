@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Saved Palettes — PalettePop</title>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/index.html" class="brand" aria-label="PalettePop Home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-dot" style="background-color: #D96B43;"></span>
+          <span class="brand-dot" style="background-color: #8A7A5C;"></span>
+          <span class="brand-dot" style="background-color: #4F7CAC;"></span>
+        </span>
+        <span>PalettePop</span>
+      </a>
+
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        Menu
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Primary Navigation">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/generate.html" class="nav-link">Generate</a>
+        <a href="/explore.html" class="nav-link">Explore</a>
+        <a href="/extract.html" class="nav-link">Extract</a>
+        <a href="/editor.html" class="nav-link">Editor</a>
+        <a href="/saved.html" class="nav-link active">Saved</a>
+        <a href="/about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h1 class="section-title">My Saved Palettes</h1>
+            <p class="section-subtitle">
+              Palettes saved in your browser's local storage. Open, edit, copy, or remove them anytime.
+            </p>
+          </div>
+          <span id="saved-count" class="palette-meta"></span>
+        </div>
+
+        <div id="saved-empty-state" class="status-box" hidden>
+          <p style="margin-bottom: 16px;">
+            You have no saved palettes yet. Explore curated palettes or generate a new one to save it here.
+          </p>
+          <a href="/explore.html" class="btn btn-primary">Explore Palettes</a>
+        </div>
+
+        <div id="saved-palettes-container" class="grid-3"></div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Palette Preview Modal -->
+  <div id="preview-modal" class="modal-backdrop" hidden role="dialog" aria-modal="true" aria-labelledby="preview-modal-title">
+    <div class="modal-dialog">
+      <h2 id="preview-modal-title" class="modal-title">Palette Preview</h2>
+      <p id="preview-modal-meta" class="modal-text"></p>
+      <div id="preview-modal-swatches" class="preview-modal-swatches"></div>
+      <div class="modal-actions">
+        <button id="preview-modal-copy" type="button" class="btn btn-secondary">Copy All HEX</button>
+        <button id="preview-modal-edit" type="button" class="btn btn-primary">Open in Editor</button>
+        <button id="preview-modal-close" type="button" class="btn btn-ghost">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Delete Confirmation Modal -->
+  <div id="delete-modal" class="modal-backdrop" hidden role="dialog" aria-modal="true" aria-labelledby="delete-modal-title">
+    <div class="modal-dialog">
+      <h2 id="delete-modal-title" class="modal-title">Delete Palette?</h2>
+      <p id="delete-modal-text" class="modal-text">
+        Are you sure you want to remove this palette from My Saved Palettes?
+      </p>
+      <div class="modal-actions">
+        <button id="delete-cancel-btn" type="button" class="btn btn-secondary">Cancel</button>
+        <button id="delete-confirm-btn" type="button" class="btn btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>PalettePop — Color Palette Generator</span>
+      <span>Built with HTML5, CSS3, Vanilla JS, Node.js &amp; Express.js</span>
+    </div>
+  </footer>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/saved.js"></script>
+</body>
+</html>

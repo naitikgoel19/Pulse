@@ -1,0 +1,12 @@
+{
+  "name": "palettepop",
+  "version": "1.0.0",
+  "description": "PalettePop — A clean, minimal color palette generator website.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

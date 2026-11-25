@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Palettes — PalettePop</title>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/index.html" class="brand" aria-label="PalettePop Home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-dot" style="background-color: #D96B43;"></span>
+          <span class="brand-dot" style="background-color: #8A7A5C;"></span>
+          <span class="brand-dot" style="background-color: #4F7CAC;"></span>
+        </span>
+        <span>PalettePop</span>
+      </a>
+
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        Menu
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Primary Navigation">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/generate.html" class="nav-link">Generate</a>
+        <a href="/explore.html" class="nav-link active">Explore</a>
+        <a href="/extract.html" class="nav-link">Extract</a>
+        <a href="/editor.html" class="nav-link">Editor</a>
+        <a href="/saved.html" class="nav-link">Saved</a>
+        <a href="/about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h1 class="section-title">Explore Palettes</h1>
+            <p class="section-subtitle">
+              Browse curated color combinations by category, click any swatch to copy, or save and customize them.
+            </p>
+          </div>
+          <span id="explore-count" class="palette-meta"></span>
+        </div>
+
+        <div id="category-filters" class="filter-bar" role="group" aria-label="Filter palettes by category">
+          <button type="button" class="filter-btn active" data-category="All">All</button>
+          <button type="button" class="filter-btn" data-category="Warm">Warm</button>
+          <button type="button" class="filter-btn" data-category="Cool">Cool</button>
+          <button type="button" class="filter-btn" data-category="Neutral">Neutral</button>
+          <button type="button" class="filter-btn" data-category="Pastel">Pastel</button>
+          <button type="button" class="filter-btn" data-category="Nature">Nature</button>
+        </div>
+
+        <div id="explore-palettes-grid" class="grid-3">
+          <div class="status-box">Loading curated palettes...</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>PalettePop — Color Palette Generator</span>
+      <span>Built with HTML5, CSS3, Vanilla JS, Node.js &amp; Express.js</span>
+    </div>
+  </footer>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/explore.js"></script>
+</body>
+</html>

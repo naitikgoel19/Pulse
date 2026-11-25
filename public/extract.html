@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Color Extractor — PalettePop</title>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/index.html" class="brand" aria-label="PalettePop Home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-dot" style="background-color: #D96B43;"></span>
+          <span class="brand-dot" style="background-color: #8A7A5C;"></span>
+          <span class="brand-dot" style="background-color: #4F7CAC;"></span>
+        </span>
+        <span>PalettePop</span>
+      </a>
+
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        Menu
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Primary Navigation">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/generate.html" class="nav-link">Generate</a>
+        <a href="/explore.html" class="nav-link">Explore</a>
+        <a href="/extract.html" class="nav-link active">Extract</a>
+        <a href="/editor.html" class="nav-link">Editor</a>
+        <a href="/saved.html" class="nav-link">Saved</a>
+        <a href="/about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h1 class="section-title">Image Color Extractor</h1>
+            <p class="section-subtitle">
+              Choose an image from your device to extract its 5 most dominant colors locally using the Canvas API.
+            </p>
+          </div>
+        </div>
+
+        <div class="extractor-layout">
+          <div class="card">
+            <label id="upload-dropzone" class="upload-dropzone" for="image-file-input">
+              <input
+                id="image-file-input"
+                type="file"
+                accept="image/*"
+                aria-label="Upload an image file"
+              />
+              <div class="upload-title">Select or drop an image</div>
+              <p class="upload-hint">Supports PNG, JPG, WEBP, GIF, and SVG. Processed privately in your browser.</p>
+              <span class="btn btn-primary btn-sm">Choose Image</span>
+            </label>
+
+            <div id="extract-error" class="error-banner" hidden role="alert"></div>
+
+            <div id="image-preview-box" class="image-preview-box" hidden>
+              <img id="image-preview" alt="Uploaded image preview" />
+              <div id="image-meta" class="image-meta"></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="feature-card-title">Extracted Palette</h2>
+            <p id="extract-status-text" class="feature-card-text">
+              Upload an image on the left to see its dominant colors and HEX codes here.
+            </p>
+
+            <div id="extracted-empty" class="status-box">
+              No image uploaded yet. Choose a photo, illustration, or poster to extract its palette.
+            </div>
+
+            <div id="extracted-results" hidden>
+              <div id="extracted-list" class="extracted-list"></div>
+
+              <div class="extracted-actions">
+                <button id="copy-extracted-btn" type="button" class="btn btn-secondary">Copy All HEX</button>
+                <button id="save-extracted-btn" type="button" class="btn btn-primary">Save Palette</button>
+                <button id="edit-extracted-btn" type="button" class="btn btn-secondary">Open in Editor</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>PalettePop — Color Palette Generator</span>
+      <span>Built with HTML5, CSS3, Vanilla JS, Node.js &amp; Express.js</span>
+    </div>
+  </footer>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/extract.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palette Editor — PalettePop</title>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/index.html" class="brand" aria-label="PalettePop Home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-dot" style="background-color: #D96B43;"></span>
+          <span class="brand-dot" style="background-color: #8A7A5C;"></span>
+          <span class="brand-dot" style="background-color: #4F7CAC;"></span>
+        </span>
+        <span>PalettePop</span>
+      </a>
+
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        Menu
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Primary Navigation">
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/generate.html" class="nav-link">Generate</a>
+        <a href="/explore.html" class="nav-link">Explore</a>
+        <a href="/extract.html" class="nav-link">Extract</a>
+        <a href="/editor.html" class="nav-link active">Editor</a>
+        <a href="/saved.html" class="nav-link">Saved</a>
+        <a href="/about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h1 class="section-title">Palette Editor</h1>
+            <p class="section-subtitle">
+              Edit HEX values, preview changes live, add or remove colors (2–8), and save or export your palette.
+            </p>
+          </div>
+          <span id="editor-count" class="palette-meta"></span>
+        </div>
+
+        <div id="editor-empty-notice" class="info-banner" hidden>
+          <div>
+            <div class="info-banner-text">
+              <strong>No palette was loaded into the editor.</strong>
+            </div>
+            <p class="info-banner-sub">
+              You can send any palette here from Generate, Explore, Extract, or Saved — or start editing with a starter palette.
+            </p>
+          </div>
+          <div class="toolbar-group">
+            <button id="load-starter-btn" type="button" class="btn btn-primary btn-sm">Start with Sample Palette</button>
+            <a href="/generate.html" class="btn btn-secondary btn-sm">Generate</a>
+            <a href="/explore.html" class="btn btn-secondary btn-sm">Explore</a>
+          </div>
+        </div>
+
+        <div id="editor-workspace">
+          <div class="toolbar">
+            <div class="toolbar-group">
+              <input
+                id="editor-name-input"
+                type="text"
+                class="text-input"
+                placeholder="Palette name"
+                maxlength="40"
+                aria-label="Palette name"
+              />
+              <button id="add-color-btn" type="button" class="btn btn-secondary">Add Color</button>
+              <button id="reset-editor-btn" type="button" class="btn btn-secondary">Reset</button>
+            </div>
+
+            <div class="toolbar-group">
+              <button id="copy-editor-btn" type="button" class="btn btn-secondary">Copy All HEX</button>
+              <button id="export-editor-btn" type="button" class="btn btn-secondary">Export JSON</button>
+              <button id="save-editor-btn" type="button" class="btn btn-primary">Save Palette</button>
+            </div>
+          </div>
+
+          <div id="editor-live-preview" class="editor-preview-strip" aria-label="Live palette preview"></div>
+
+          <div id="editor-swatches-grid" class="editor-swatches-grid"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>PalettePop — Color Palette Generator</span>
+      <span>Built with HTML5, CSS3, Vanilla JS, Node.js &amp; Express.js</span>
+    </div>
+  </footer>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/editor.js"></script>
+</body>
+</html>
